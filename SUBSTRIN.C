@@ -1,13 +1,11 @@
 #include<stdio.h>
-#include<conio.h>
 #include<string.h>
 
-void main()
+int main()
 {
- long char str[1000], word[20];
+ char str[1000], word[20];
  int i, j, found, strLen, wordLen;
 
- clrscr();
  printf("Enter any string: ");
  gets(str);
  printf("Enter any word to search: ");
@@ -31,15 +29,6 @@ void main()
    {
     printf("'%s' found at index: %d\n", word, i);
    }
-  else
-   {
-    printf("Sorry,Word is not found.");
-   }
  }
- printf("\n");
- printf("\n");
- printf("\n");
- printf("*************************************************************\n");
- printf("Have a nice day.");
- getch();
+ return 0;
 }
